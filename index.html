@@ -1,122 +1,103 @@
 <!DOCTYPE html>
-<title>Adrien Prevost - PhD in Statistics and Machine Learning</title>
-<meta name="description" content="Adrien Prevost, PhD student in Statistics and Machine Learning. CV, publications, and contact info.">
-<meta name="keywords" content="Adrien Prevost, Statistics, Machine Learning, CV, Publications">
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Adrien Prevost – PhD student, stochastic bandits</title>
+<meta name="description" content="Adrien Prevost, PhD student in applied mathematics at Inria Lille and Université de Lille, working on stochastic multi-armed bandits. CV, publications and contact.">
+<meta name="keywords" content="Adrien Prevost, multi-armed bandits, stochastic bandits, transfer learning, Inria Lille">
 <style>
-/* Reset basique */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #fafafa;
+    color: #222;
+    line-height: 1.6;
 }
 
-/* Header */
+a { color: #1e3c6e; }
+
 header {
-    background-color: #2c3e50;
+    background-color: #1e3c6e;
     color: white;
     display: flex;
-    align-items: center;        /* centre verticalement */
-    justify-content: center;    /* centre horizontalement */
-    padding: 20px 40px;
-    gap: 20px;                  /* espace entre photo et texte */
-    flex-wrap: wrap;            /* pour mobile : la photo passera au-dessus du texte */
+    align-items: center;
+    justify-content: center;
+    padding: 24px 40px;
+    gap: 28px;
+    flex-wrap: wrap;
 }
 
 .header-photo img {
-    width: 150px;
+    width: 140px;
     height: auto;
-    border-radius: 0;           /* rectangulaire */
+    display: block;
 }
 
-.header-text h1 {
-    margin-bottom: 10px;
-    font-size: 2em;
-}
+.header-text h1 { font-size: 2em; margin-bottom: 6px; }
+.header-text p { font-size: 1.1em; }
 
-.header-text p {
-    font-size: 1.2em;
-}
-
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #34495e;
+    background-color: #2b4f86;
     flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 12px 22px;
     display: block;
 }
 
-nav a:hover {
-    background-color: #1abc9c;
-}
+nav a:hover { background-color: #3a64a3; }
 
-/* Sections */
 section {
-    padding: 50px 20px;
-    max-width: 900px;
+    padding: 36px 20px 8px;
+    max-width: 860px;
     margin: auto;
 }
 
 h2 {
-    color: #2c3e50;
-    margin-bottom: 20px;
+    color: #1e3c6e;
+    border-bottom: 1px solid #1e3c6e;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
 }
 
-ul {
-    list-style-type: square;
-}
+ul { padding-left: 1.3em; }
+li { margin-bottom: 10px; }
 
-/* Buttons */
+.authors { display: block; }
+.me { font-weight: bold; }
+
 a.button {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #1abc9c;
+    padding: 8px 18px;
+    margin: 8px 10px 0 0;
+    background-color: #1e3c6e;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-a.button:hover {
-    background-color: #16a085;
-}
+a.button:hover { background-color: #2b4f86; }
 
-/* Footer */
 footer {
-    background-color: #2c3e50;
+    margin-top: 40px;
+    background-color: #1e3c6e;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 16px;
+    font-size: 0.9em;
 }
 
-/* Responsive */
 @media (max-width: 700px) {
-    header {
-        flex-direction: column;   /* photo au-dessus du texte */
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column;   /* liens empilés sur mobile */
-    }
+    header { flex-direction: column; text-align: center; padding: 20px 16px; }
+    nav { flex-direction: column; text-align: center; }
+    section { padding: 28px 16px 4px; }
 }
 </style>
 </head>
@@ -124,42 +105,77 @@ footer {
 
 <header>
     <div class="header-photo">
-        <img src="moi.jpg" alt="Adrien Prevost">
+        <img src="moi.jpg" alt="Photo of Adrien Prevost">
     </div>
     <div class="header-text">
         <h1>Adrien Prevost</h1>
-        <p>PhD Student in Statistics and Machine Learning</p>
+        <p>PhD student in applied mathematics<br>Inria Lille – Université de Lille</p>
     </div>
 </header>
 
 <nav>
-    <a href="#cv">CV</a>
+    <a href="#about">About</a>
     <a href="#publications">Publications</a>
+    <a href="#preprints">Preprints</a>
+    <a href="#talks">Talks &amp; service</a>
+    <a href="#outreach">Outreach</a>
+    <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="cv">
-    <h2>My CV</h2>
-    <p>You can download my full CV by clicking the link below:</p>
-    <a href="CV.pdf" class="button" target="_blank">Download CV</a>
+<section id="about">
+    <h2>About</h2>
+    <p>I am a PhD student in the Scool team at Inria Lille and Université de Lille, advised by
+    Odalric-Ambrym Maillard and Timothée Mathieu. I work on stochastic multi-armed bandits and
+    problem-dependent guarantees: lower bounds and asymptotically optimal algorithms, transfer learning
+    and batched bandits.</p>
 </section>
 
 <section id="publications">
     <h2>Publications</h2>
     <ul>
-        <li><strong>Asymptotically Optimal Problem-Dependent Bandit Policies for Transfer Learning</strong> – <em>ACML, 2025</em> <a href="https://arxiv.org/abs/2509.19098">[Link]</a></li>
+        <li><strong>Asymptotically Optimal Problem-Dependent Bandit Policies for Transfer Learning</strong>
+            <span class="authors"><span class="me">A. Prevost</span>, T. Mathieu, O.-A. Maillard.
+            <em>ACML 2025</em>, PMLR 304. <a href="https://arxiv.org/abs/2509.19098">[arXiv]</a></span></li>
     </ul>
+</section>
+
+<section id="preprints">
+    <h2>Preprints</h2>
+    <ul>
+        <li><strong>Transfer Learning in Bandits from Unknown Adaptive Policies: Problem-Dependent Lower and Upper Bounds</strong>
+            <span class="authors"><span class="me">A. Prevost</span>, T. Mathieu, W. Radji, O.-A. Maillard.
+            2026. <a href="https://arxiv.org/abs/2610.21582">[arXiv]</a></span></li>
+    </ul>
+</section>
+
+<section id="talks">
+    <h2>Talks &amp; service</h2>
+    <ul>
+        <li>ACML 2025, Taipei, Taiwan (December 2025): oral presentation and poster.</li>
+        <li>Organization committee of <a href="https://ewrl-org.github.io/ewrl-2026/">EWRL 2026</a>,
+            the 19th European Workshop on Reinforcement Learning, Lille, October 5–7, 2026.</li>
+    </ul>
+</section>
+
+<section id="outreach">
+    <h2>Outreach</h2>
+    <p>I enjoy contributing to <a href="https://en.wikipedia.org/wiki/Special:Contributions/Adrien_PREVOST">Wikipedia</a>, mostly on bandit algorithms.</p>
+</section>
+
+<section id="cv">
+    <h2>CV</h2>
+    <a href="CV.pdf" class="button" target="_blank">CV (English, PDF)</a>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:adrien.prevost@inria.fr">adrien.prevost@inria.fr</a></p>
+    <p>Email: <a href="mailto:prevostadrien.etude@gmail.com">prevostadrien.etude@gmail.com</a></p>
 </section>
 
 <footer>
-    &copy; 2025 Adrien Prevost
+    &copy; 2026 Adrien Prevost
 </footer>
 
 </body>
 </html>
-
